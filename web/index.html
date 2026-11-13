@@ -1,0 +1,5 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>样品受理门户</title><style>body{font-family:sans-serif;margin:24px}label{display:block;margin:12px}pre{white-space:pre-wrap}</style>
+<h1>样品登记</h1><form id="intake"><section id="step1"><label>交接业务键<input name="requestKey" required></label><label>样本类型<select name="kind"><option value="seed">种子</option><option value="leaf">叶片</option></select></label><label>材料编号<input name="material" required></label><button id="next" type="button">下一步</button></section>
+<section id="step2" hidden><label>样品数量<input name="count" type="number" min="1" max="20" required></label><label>联系人<input name="contact" required></label><label id="solvent-row" hidden>保存介质<input name="solvent"></label><button id="review" type="button">核对摘要</button></section>
+<section id="step3" hidden><h2>提交前核对</h2><pre id="summary"></pre><button id="commit">确认提交</button></section></form>
+<p id="status" role="status"></p><pre id="receipt"></pre><h2>已登记查询</h2><form id="search"><label>查询业务键<input name="key"></label><button>查询登记</button></form><div id="matches"></div><script type="module" src="/app.js"></script></html>

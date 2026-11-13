@@ -1,0 +1,4 @@
+[
+  {"requestKey":"REQ-01","kind":"seed","material":"M-001","count":3,"contact":"演练甲"},
+  {"requestKey":"REQ-02","kind":"leaf","material":"M-002","count":2,"solvent":"水","contact":"演练乙"}
+]
