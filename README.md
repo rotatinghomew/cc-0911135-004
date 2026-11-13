@@ -8,6 +8,8 @@ Node.js 22.23.4，依赖使用 package-lock.json 固定。准备阶段运行 `np
 准备浏览器环境时执行 `npx playwright install chromium`，或复用已安装且版本相符的 Chromium。运行阶段不下载浏览器。
 浏览器页面回归：`npm run test:browser`。
 
+Linux 门户健康检查使用单独的 Python Playwright 绑定，版本及传递依赖见 `requirements-verification.txt`；产品仍为 Node.js。先向检查器的 Python 虚拟环境安装该清单，再用 `python3 -m playwright install chromium` 准备匹配的浏览器。npm 的 Playwright 安装不能替代 Python 绑定。项目环境准备工具可一次完成清单安装和浏览器准备；日常启动与回归须在预装环境中离线运行。
+
 ```bash
 npm run build
 npm test
