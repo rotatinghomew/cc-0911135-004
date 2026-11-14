@@ -12,6 +12,7 @@
     "build": "node tools/check.mjs",
     "test": "node --test test/*.test.mjs",
     "demo": "node tools/demo.mjs",
+    "intake": "node tools/intake.mjs",
     "verify": "node test/verify.mjs",
     "test:browser": "node --test browser/*.test.mjs"
   },

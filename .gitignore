@@ -3,6 +3,7 @@
 *.pem
 node_modules/
 var/
+intake-receipts.json
 sealed/
 *.part
 playwright-report/
